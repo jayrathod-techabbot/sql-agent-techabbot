@@ -84,16 +84,6 @@ try:
         api_version="2024-12-01-preview",
     )
 
-    # Create SQLDatabase instance
-    # db = SQLDatabase.from_uri(
-    #     f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}",
-    #     sample_rows_in_table_info=3,
-    #     connect_args={"ssl": {"ca": "DigiCertGlobalRootCA.crt.pem"}},
-    # )
-
-    # db = SQLDatabase.from_uri(f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}" "?check_hostname=False&ssl_verify_cert=False",
-    #                           sample_rows_in_table_info=3 )
-    # Testing SQLDatabase
 
     DATABASE_URI = f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}"
     CONNECT_ARGS = {
